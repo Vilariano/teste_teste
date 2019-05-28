@@ -1,0 +1,84 @@
+[
+  {
+    "uri": "features/specifications/visit_tbb.feature",
+    "id": "fazer-alguma-coisa",
+    "keyword": "Funcionalidade",
+    "name": "Fazer alguma coisa",
+    "description": "    Sendo alguem\n    Posso verificar alguma coisa",
+    "line": 2,
+    "elements": [
+      {
+        "id": "fazer-alguma-coisa;validax-algo",
+        "keyword": "Cenario",
+        "name": "validax algo",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@VisitTbb",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.21.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20048
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.21.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15422
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que faco algo",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/visit_tbb_steps.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "rack-test requires a rack application, but none was given (ArgumentError)\n./features/steps_definitions/visit_tbb_steps.rb:2:in `\"que faco algo\"'\nfeatures/specifications/visit_tbb.feature:8:in `Dado que faco algo'",
+              "duration": 4423450
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "recebo alguma coisa",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/visit_tbb_steps.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.21.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "rack-test requires a rack application, but none was given (ArgumentError)",
+              "duration": 96642
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
